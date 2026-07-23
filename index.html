@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="An interactive introduction to CRISPR-Cas9 and the science behind precise gene editing."
+  >
+  <title>CRISPR-Cas9 | The Molecular Scissors</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&amp;family=Manrope:wght@500;600;700;800&amp;display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="hero" id="home">
+    <nav class="navigation" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="CRISPR-Cas9 home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        CRISPR-Cas9
+      </a>
+      <div class="nav-links">
+        <a href="#introduction">Introduction</a>
+        <a href="#definition">Definition</a>
+        <a href="#process">How it works</a>
+        <a href="#applications">Applications</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <canvas id="genome-canvas" aria-hidden="true"></canvas>
+    <div class="hero-glow" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <p class="eyebrow">An interactive biotechnology article</p>
+      <h1>
+        CRISPR-Cas9
+        <span>The molecular scissors transforming modern biology.</span>
+      </h1>
+      <p class="hero-summary">
+        Discover how a bacterial defense system became one of the most precise
+        and influential gene-editing tools in science.
+      </p>
+      <a class="scroll-cue" href="#introduction">
+        Explore the science
+        <span aria-hidden="true">↓</span>
+      </a>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="article-section introduction" id="introduction">
+      <div class="section-label">
+        <span>01</span>
+        Introduction
+      </div>
+      <div class="section-copy">
+        <p class="lead">
+          Advances in biotechnology have transformed the way scientists study,
+          understand, and manipulate living organisms.
+        </p>
+        <p>
+          Among these innovations, the CRISPR-Cas9 system has emerged as one of
+          the most significant breakthroughs in modern molecular biology,
+          providing a precise, efficient, and accessible method for editing DNA.
+          Originally discovered as part of the adaptive immune system of
+          bacteria, CRISPR-Cas9 has rapidly become an essential tool in
+          biomedical research, agriculture, biotechnology, and the development
+          of potential therapies for genetic diseases.
+        </p>
+      </div>
+    </section>
+
+    <section class="definition-section" id="definition">
+      <div class="definition-inner">
+        <div class="definition-heading">
+          <div class="section-label light">
+            <span>02</span>
+            Definition
+          </div>
+          <h2>What is<br>CRISPR-Cas9?</h2>
+        </div>
+
+        <div class="definition-content">
+          <p class="lead light-text">
+            A gene-editing technology that allows researchers to modify specific
+            parts of the genome with remarkable precision.
+          </p>
+          <p>
+            CRISPR stands for <strong>Clustered Regularly Interspaced Short
+            Palindromic Repeats</strong>. These repeated DNA sequences were first
+            identified as part of a natural defense system used by bacteria.
+          </p>
+
+          <div class="molecular-pair">
+            <article>
+              <span class="molecule-icon cas9-icon" aria-hidden="true">✦</span>
+              <div>
+                <h3>Cas9 enzyme</h3>
+                <p>
+                  The protein that acts like molecular scissors and cuts DNA at
+                  a targeted location.
+                </p>
+              </div>
+            </article>
+            <article>
+              <span class="molecule-icon rna-icon" aria-hidden="true">≈</span>
+              <div>
+                <h3>Guide RNA</h3>
+                <p>
+                  The programmable molecule that recognizes and leads Cas9 to
+                  the desired DNA sequence.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="process-section" id="process">
+      <div class="process-intro">
+        <div class="section-label">
+          <span>03</span>
+          The mechanism
+        </div>
+        <h2>How does CRISPR-Cas9 work?</h2>
+        <p>
+          Follow the molecular sequence from identifying a target to repairing
+          the edited DNA.
+        </p>
+      </div>
+
+      <div class="process-flow" aria-label="Five steps explaining how CRISPR-Cas9 works">
+        <article class="process-step">
+          <div class="step-visual target-visual" aria-hidden="true">
+            <div class="mini-dna"><i></i><i></i><i></i><i></i><i></i></div>
+            <span class="target-ring"></span>
+          </div>
+          <div class="step-text">
+            <span class="step-number">Step 01</span>
+            <h3>Identify the target</h3>
+            <p>
+              Scientists locate the DNA sequence associated with a gene, trait,
+              or genetic condition they want to study.
+            </p>
+          </div>
+        </article>
+
+        <div class="flow-arrow" aria-hidden="true">↓</div>
+
+        <article class="process-step">
+          <div class="step-visual guide-visual" aria-hidden="true">
+            <span class="rna-strand"></span>
+            <span class="rna-label">gRNA</span>
+          </div>
+          <div class="step-text">
+            <span class="step-number">Step 02</span>
+            <h3>Design the guide RNA</h3>
+            <p>
+              A guide RNA is created with a sequence that matches the selected
+              region of the genome.
+            </p>
+          </div>
+        </article>
+
+        <div class="flow-arrow" aria-hidden="true">↓</div>
+
+        <article class="process-step">
+          <div class="step-visual complex-visual" aria-hidden="true">
+            <span class="cas9-shape">Cas9</span>
+            <span class="guide-line"></span>
+          </div>
+          <div class="step-text">
+            <span class="step-number">Step 03</span>
+            <h3>Form the CRISPR complex</h3>
+            <p>
+              The guide RNA joins the Cas9 enzyme and directs it through the
+              cell toward the matching DNA sequence.
+            </p>
+          </div>
+        </article>
+
+        <div class="flow-arrow" aria-hidden="true">↓</div>
+
+        <article class="process-step">
+          <div class="step-visual cut-visual" aria-hidden="true">
+            <span class="cut-line left"></span>
+            <span class="cut-mark">✦</span>
+            <span class="cut-line right"></span>
+          </div>
+          <div class="step-text">
+            <span class="step-number">Step 04</span>
+            <h3>Cut the DNA</h3>
+            <p>
+              When the guide finds its match, Cas9 makes a precise cut across
+              both strands of the DNA.
+            </p>
+          </div>
+        </article>
+
+        <div class="flow-arrow" aria-hidden="true">↓</div>
+
+        <article class="process-step">
+          <div class="step-visual repair-visual" aria-hidden="true">
+            <span class="repair-line"></span>
+            <span class="repair-pulse"></span>
+          </div>
+          <div class="step-text">
+            <span class="step-number">Step 05</span>
+            <h3>Repair and edit</h3>
+            <p>
+              The cell's natural repair system reconnects the DNA. Researchers
+              can use this process to disable a gene or introduce a new sequence.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="applications-section" id="applications">
+      <div class="applications-intro">
+        <div class="section-label light">
+          <span>04</span>
+          Applications
+        </div>
+        <h2>One technology.<br>Multiple possibilities.</h2>
+        <p>
+          CRISPR-Cas9 is used as a research platform across medicine, agriculture,
+          fundamental biology, and molecular diagnostics. Choose an application
+          to explore how targeted gene editing can be used in each field.
+        </p>
+      </div>
+
+      <nav class="application-menu" aria-label="Explore CRISPR applications">
+        <a href="#therapeutic-medicine">
+          <span>01</span>
+          Therapeutic medicine
+          <b aria-hidden="true">↓</b>
+        </a>
+        <a href="#agriculture">
+          <span>02</span>
+          Agriculture
+          <b aria-hidden="true">↓</b>
+        </a>
+        <a href="#biological-research">
+          <span>03</span>
+          Biological research
+          <b aria-hidden="true">↓</b>
+        </a>
+        <a href="#molecular-diagnostics">
+          <span>04</span>
+          Molecular diagnostics
+          <b aria-hidden="true">↓</b>
+        </a>
+      </nav>
+    </section>
+
+    <section class="application-details" aria-label="Detailed CRISPR applications">
+      <article class="application-detail" id="therapeutic-medicine">
+        <figure class="application-image medicine-image">
+          <div class="cell cell-one" aria-hidden="true"></div>
+          <div class="cell cell-two" aria-hidden="true"></div>
+          <div class="edited-sequence" aria-hidden="true">
+            <i></i><i></i><i></i><i></i><i></i><i></i>
+          </div>
+          <figcaption>Editorial visualization of targeted editing in human cells.</figcaption>
+        </figure>
+        <div class="application-copy">
+          <p class="application-number">Application 01</p>
+          <h3>Therapeutic medicine</h3>
+          <p>
+            CRISPR-based therapies aim to modify disease-associated DNA in
+            selected cells. Researchers are studying strategies that correct
+            harmful variants, disrupt genes that contribute to disease, or
+            restore useful biological functions.
+          </p>
+          <p>
+            Therapeutic editing may take place <em>ex vivo</em>, where cells are
+            edited outside the body and returned to the patient, or
+            <em>in vivo</em>, where the editing system is delivered directly to
+            a target tissue. Delivery, off-target changes, immune responses, and
+            long-term safety remain essential areas of investigation.
+            <a class="citation-marker" href="#reference-4" aria-label="Go to reference 4">[4]</a>
+          </p>
+          <a class="back-link" href="#applications">Back to applications ↑</a>
+        </div>
+      </article>
+
+      <article class="application-detail reverse" id="agriculture">
+        <figure class="application-image agriculture-image">
+          <div class="crop-stem" aria-hidden="true"></div>
+          <span class="leaf leaf-one" aria-hidden="true"></span>
+          <span class="leaf leaf-two" aria-hidden="true"></span>
+          <span class="leaf leaf-three" aria-hidden="true"></span>
+          <span class="sun-orbit" aria-hidden="true"></span>
+          <figcaption>Editorial visualization of gene-edited crop traits.</figcaption>
+        </figure>
+        <div class="application-copy">
+          <p class="application-number">Application 02</p>
+          <h3>Agriculture</h3>
+          <p>
+            In agriculture, CRISPR can introduce targeted changes associated
+            with useful plant traits. Research includes disease resistance,
+            drought or heat tolerance, nutritional quality, shelf life, and
+            more efficient crop development.
+          </p>
+          <p>
+            Unlike some earlier genetic modification approaches, CRISPR can
+            alter an organism's existing DNA without necessarily adding DNA from
+            another species. Every edited crop still requires careful evaluation
+            of its biological effects, environmental impact, and applicable
+            regulation.
+            <a class="citation-marker" href="#reference-3" aria-label="Go to reference 3">[3]</a>
+          </p>
+          <a class="back-link" href="#applications">Back to applications ↑</a>
+        </div>
+      </article>
+
+      <article class="application-detail" id="biological-research">
+        <figure class="application-image research-image">
+          <div class="petri-dish" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
+          <div class="pipette" aria-hidden="true"></div>
+          <figcaption>Editorial visualization of CRISPR in laboratory research.</figcaption>
+        </figure>
+        <div class="application-copy">
+          <p class="application-number">Application 03</p>
+          <h3>Biological research</h3>
+          <p>
+            Scientists use CRISPR to investigate what genes do. By switching a
+            gene off, changing its sequence, or controlling its activity,
+            researchers can observe how cells and organisms respond.
+          </p>
+          <p>
+            These experiments help create cellular and animal models, identify
+            biological pathways, test hypotheses, and search for possible drug
+            targets. CRISPR's programmable guide RNA also makes large-scale
+            genetic screens more practical.
+            <a class="citation-marker" href="#reference-1" aria-label="Go to reference 1">[1]</a>
+          </p>
+          <a class="back-link" href="#applications">Back to applications ↑</a>
+        </div>
+      </article>
+
+      <article class="application-detail reverse" id="molecular-diagnostics">
+        <figure class="application-image diagnostics-image">
+          <div class="sample-tube" aria-hidden="true">
+            <span></span>
+          </div>
+          <div class="signal-waves" aria-hidden="true">
+            <i></i><i></i><i></i>
+          </div>
+          <div class="target-dot" aria-hidden="true"></div>
+          <figcaption>Editorial visualization of sequence-based molecular detection.</figcaption>
+        </figure>
+        <div class="application-copy">
+          <p class="application-number">Application 04</p>
+          <h3>Molecular diagnostics</h3>
+          <p>
+            Some CRISPR systems can be programmed to recognize genetic material
+            from a pathogen or another biological target. When the target
+            sequence is detected, the system can produce a measurable signal.
+          </p>
+          <p>
+            This principle is being studied for rapid, sensitive tests that
+            identify specific DNA or RNA sequences. Diagnostic platforms often
+            use CRISPR-associated enzymes other than Cas9, including Cas12 and
+            Cas13, because their molecular behavior is especially useful for
+            detection.
+            <a class="citation-marker" href="#reference-2" aria-label="Go to reference 2">[2]</a>
+          </p>
+          <a class="back-link" href="#applications">Back to applications ↑</a>
+        </div>
+      </article>
+    </section>
+
+    <section class="references-section" id="references">
+      <div class="references-heading">
+        <div class="section-label">
+          <span>05</span>
+          Sources
+        </div>
+        <h2>References</h2>
+      </div>
+      <ol class="reference-list">
+        <li id="reference-1">
+          <span>[1]</span>
+          <p>
+            Redman, M., King, A., Watson, C., &amp; King, D. (2016). What is
+            CRISPR/Cas9? <em>Archives of Disease in Childhood - Education &amp;
+            Practice Edition, 101</em>(4), 213-215.
+            <a href="https://doi.org/10.1136/archdischild-2016-310459" target="_blank" rel="noreferrer">
+              https://doi.org/10.1136/archdischild-2016-310459
+            </a>
+          </p>
+        </li>
+        <li id="reference-2">
+          <span>[2]</span>
+          <p>
+            YourGenome. (2026). <em>What is CRISPR-Cas9?</em> Wellcome
+            Connecting Science.
+            <a href="https://www.yourgenome.org/theme/what-is-crispr-cas9/" target="_blank" rel="noreferrer">
+              https://www.yourgenome.org/theme/what-is-crispr-cas9/
+            </a>
+          </p>
+        </li>
+        <li id="reference-3">
+          <span>[3]</span>
+          <p>
+            Innovative Genomics Institute. (2024, June 6).
+            <em>¿Qué es CRISPR?</em>
+            <a href="https://innovativegenomics.org/es/que-es-crispr/" target="_blank" rel="noreferrer">
+              https://innovativegenomics.org/es/que-es-crispr/
+            </a>
+          </p>
+        </li>
+        <li id="reference-4">
+          <span>[4]</span>
+          <p>
+            Bharti, A., &amp; Mudge, J. (2025). Therapeutic applications of
+            CRISPR-Cas9 gene editing. <em>Frontiers in Genome Editing, 7</em>.
+            <a href="https://doi.org/10.3389/fgeed.2025.1724291" target="_blank" rel="noreferrer">
+              https://doi.org/10.3389/fgeed.2025.1724291
+            </a>
+          </p>
+        </li>
+      </ol>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div>
+      <p class="footer-kicker">Contact</p>
+      <h2>Cristian Rivera</h2>
+    </div>
+    <div class="contact-links">
+      <a href="mailto:cristiandanel08@gmail.com">
+        cristiandanel08@gmail.com <span aria-hidden="true">↗</span>
+      </a>
+      <a href="https://github.com/crisriveraa" target="_blank" rel="noreferrer">
+        GitHub <span aria-hidden="true">↗</span>
+      </a>
+      <p>Mexico City, Mexico</p>
+    </div>
+    <p class="copyright">CRISPR-Cas9 educational project · Biotechnology portfolio</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
