@@ -736,6 +736,116 @@ h1 span {
     0 0 0 20px rgba(21, 148, 244, 0.25);
 }
 
+.considerations-section {
+  padding: clamp(7rem, 14vw, 11rem) max(1.5rem, calc((100vw - 1120px) / 2));
+  background:
+    radial-gradient(circle at 85% 12%, rgba(40, 173, 245, 0.22), transparent 25%),
+    linear-gradient(145deg, #04182d, var(--blue-900));
+  color: var(--white);
+}
+
+.considerations-heading {
+  max-width: 900px;
+}
+
+.considerations-heading h2 {
+  margin: 2.5rem 0 1.5rem;
+  font-size: clamp(3.3rem, 7vw, 6.7rem);
+  letter-spacing: -0.07em;
+  line-height: 0.98;
+}
+
+.considerations-heading > p {
+  max-width: 730px;
+  color: var(--blue-200);
+  font-size: 1.14rem;
+}
+
+.consideration-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+  margin-top: 5rem;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 1.6rem;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.consideration-card {
+  min-height: 390px;
+  padding: clamp(1.6rem, 4vw, 3rem);
+  background: rgba(255, 255, 255, 0.055);
+  transition:
+    background 200ms ease,
+    transform 200ms ease;
+}
+
+.consideration-card:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.consideration-icon {
+  display: grid;
+  width: 3.2rem;
+  height: 3.2rem;
+  place-items: center;
+  margin-bottom: 3.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 50%;
+  color: var(--blue-300);
+  font-size: 1.5rem;
+}
+
+.consideration-number {
+  margin: 0 0 0.65rem;
+  color: var(--blue-300);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.consideration-card h3 {
+  margin: 0 0 1rem;
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  letter-spacing: -0.04em;
+}
+
+.consideration-card > p:last-child {
+  margin: 0;
+  color: var(--blue-200);
+}
+
+.light-marker {
+  color: var(--blue-300);
+}
+
+.ethics-question {
+  margin-top: 5rem;
+  padding: clamp(2rem, 6vw, 5rem);
+  border: 1px solid rgba(255, 255, 255, 0.17);
+  border-radius: 1.6rem;
+  background: var(--blue-700);
+}
+
+.ethics-question p {
+  margin: 0 0 1.5rem;
+  color: var(--blue-100);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.ethics-question h3 {
+  max-width: 920px;
+  margin: 0;
+  font-size: clamp(2.1rem, 5vw, 4.5rem);
+  letter-spacing: -0.055em;
+  line-height: 1.08;
+}
+
 .references-section {
   display: grid;
   grid-template-columns: 0.75fr 1.25fr;
@@ -1105,6 +1215,10 @@ footer h2 {
   }
 
   .application-menu {
+    grid-template-columns: 1fr;
+  }
+
+  .consideration-grid {
     grid-template-columns: 1fr;
   }
 
